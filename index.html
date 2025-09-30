@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U.S. Immigration & Border Security - Interactive Learning Model</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <h1 class="nav-title">U.S. Immigration & Border Security</h1>
+                <div class="nav-menu">
+                    <button class="nav-btn active" data-section="overview">Overview</button>
+                    <button class="nav-btn" data-section="border-trends">Border Trends</button>
+                    <button class="nav-btn" data-section="sanctuary-cities">Sanctuary Cities</button>
+                    <button class="nav-btn" data-section="citizenship">Birthright Citizenship</button>
+                    <button class="nav-btn" data-section="fentanyl">Fentanyl Crisis</button>
+                    <button class="nav-btn" data-section="trump-policies">Trump Policies</button>
+                    <button class="nav-btn" data-section="ice-history">ICE History</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Overview Section -->
+        <section id="overview" class="section active">
+            <div class="container">
+                <h2>Interactive Learning Model: U.S. Immigration Enforcement & Border Security</h2>
+                <div class="intro-content">
+                    <div class="hero-image">
+                    </div>
+                    
+                    <div class="key-stats">
+                        <div class="stat-card">
+                            <h3>Historic Low</h3>
+                            <div class="stat-number">~6,000</div>
+                            <p>Migrant apprehensions in June 2025 - a new historic low</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>Previous Peak</h3>
+                            <div class="stat-number">10,000+</div>
+                            <p>Daily encounters during 2021-22 under previous administration</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>87% Drop</h3>
+                            <div class="stat-number">87%</div>
+                            <p>Reduction in illegal crossings where border wall was constructed</p>
+                        </div>
+                    </div>
+
+                    <div class="learning-objectives">
+                        <h3>What You'll Learn</h3>
+                        <ul>
+                            <li>📊 How border crossing data has changed over time</li>
+                            <li>🏛️ How sanctuary city policies work and their effects</li>
+                            <li>👶 The truth about birthright citizenship and "anchor babies"</li>
+                            <li>💊 How fentanyl flows from China through Mexico to the U.S.</li>
+                            <li>🏗️ Major immigration policies under the Trump administration</li>
+                            <li>👮 The history and expansion of ICE since 9/11</li>
+                        </ul>
+                    </div>
+
+                    <div class="election-context">
+                        <h3>2024 Election Campaign Context</h3>
+                        <div class="campaign-timeline">
+                            <div class="campaign-item">
+                                <div class="campaign-date">2024 Campaign</div>
+                                <div class="campaign-content">
+                                    <h4>Trump's Immigration Platform</h4>
+                                    <p>During the 2024 presidential campaign, Trump made immigration and border security central to his platform, promising to:</p>
+                                    <ul>
+                                        <li>End catch-and-release policies immediately</li>
+                                        <li>Build additional physical barriers along the southern border</li>
+                                        <li>Reinstate the "Remain in Mexico" program</li>
+                                        <li>Deploy additional personnel and technology to secure the border</li>
+                                        <li>Review birthright citizenship policies</li>
+                                        <li>Combat the fentanyl crisis through enhanced border security</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="campaign-item">
+                                <div class="campaign-date">January 2025</div>
+                                <div class="campaign-content">
+                                    <h4>Inauguration and Immediate Actions</h4>
+                                    <p>Upon taking office in January 2025, the Trump administration immediately began implementing these campaign promises through executive actions and policy directives.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="start-learning">
+                        <button class="btn-primary" onclick="showSection('border-trends')">Start Learning Journey</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Border Trends Section -->
+        <section id="border-trends" class="section">
+            <div class="container">
+                <h2>Border Security: Trump vs Biden Administration Comparison</h2>
+                
+                <div class="content-grid">
+                    <div class="main-content">
+
+                        <div class="administration-comparison">
+                            <h3>Border Crossings Comparison: March 2024 vs March 2025</h3>
+                            <div class="comparison-cards">
+                                <div class="comparison-card biden">
+                                    <h4>Biden Administration - March 2024</h4>
+                                    <div class="comparison-stats">
+                                        <div class="stat-item">
+                                            <span class="stat-label">Border Crossings:</span>
+                                            <span class="stat-value">189,372</span>
+                                        </div>
+                                        <div class="stat-item">
+                                            <span class="stat-label">Daily Average:</span>
+                                            <span class="stat-value">6,109 per day</span>
+                                        </div>
+                                    </div>
+                                    <div class="key-policies">
+                                        <h5>Policies in Effect:</h5>
+                                        <ul>
+                                            <li>Catch-and-release policies active</li>
+                                            <li>Limited border security measures</li>
+                                            <li>Asylum processing at ports of entry</li>
+                                            <li>Parole programs in operation</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="comparison-card trump">
+                                    <h4>Trump Administration - March 2025</h4>
+                                    <div class="comparison-stats">
+                                        <div class="stat-item">
+                                            <span class="stat-label">Border Crossings:</span>
+                                            <span class="stat-value">45,234</span>
+                                        </div>
+                                        <div class="stat-item">
+                                            <span class="stat-label">Daily Average:</span>
+                                            <span class="stat-value">1,459 per day</span>
+                                        </div>
+                                    </div>
+                                    <div class="key-policies">
+                                        <h5>Current 2025 Policies:</h5>
+                                        <ul>
+                                            <li>Ended catch-and-release policies</li>
+                                            <li>Reinstated "Remain in Mexico" program</li>
+                                            <li>Constructing physical barriers</li>
+                                            <li>Enhanced border security measures</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="reduction-highlight">
+                                <h4>🚨 Massive Reduction Achieved</h4>
+                                <div class="reduction-stats">
+                                    <div class="reduction-number">76%</div>
+                                    <div class="reduction-text">Decrease in border crossings from March 2024 to March 2025</div>
+                                </div>
+                                <div class="reduction-details">
+                                    <p><strong>144,138 fewer crossings</strong> in March 2025 compared to March 2024</p>
+                                    <p><strong>4,650 fewer crossings per day</strong> on average</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="border-security-context">
+                            <h3>Why Border Security Matters</h3>
+                            <div class="security-reasons">
+                                <div class="reason-card">
+                                    <h4>🇺🇸 National Security</h4>
+                                    <p>Preventing potential security threats, human trafficking, and drug smuggling from entering the country.</p>
+                                </div>
+                                <div class="reason-card">
+                                    <h4>💰 Economic Impact</h4>
+                                    <p>Unauthorized crossings strain local resources, healthcare systems, and emergency services in border communities.</p>
+                                </div>
+                                <div class="reason-card">
+                                    <h4>⚖️ Rule of Law</h4>
+                                    <p>Maintaining immigration system integrity and ensuring legal pathways remain the primary entry method.</p>
+                                </div>
+                                <div class="reason-card">
+                                    <h4>🏥 Public Health</h4>
+                                    <p>Controlling entry during health emergencies and preventing spread of diseases across borders.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar">
+                        <div class="quiz-box">
+                            <h3>Quick Check</h3>
+                            <div class="quiz-question">
+                                <p>Which administration had higher average monthly border apprehensions?</p>
+                                <div class="quiz-options">
+                                    <button class="quiz-btn" data-answer="biden">Biden Administration</button>
+                                    <button class="quiz-btn" data-answer="trump">Trump Administration</button>
+                                </div>
+                                <div class="quiz-feedback"></div>
+            </div>
+        </div>
+
+                        <div class="key-terms">
+                            <h3>Key Terms</h3>
+                            <div class="term-item">
+                                <strong>Border Apprehension:</strong> When Border Patrol encounters someone attempting to cross illegally
+                            </div>
+                            <div class="term-item">
+                                <strong>Title 42:</strong> Public health order allowing rapid expulsion during COVID-19
+                            </div>
+                            <div class="term-item">
+                                <strong>Remain in Mexico:</strong> Policy requiring asylum seekers to wait in Mexico for court dates
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+        <!-- Sanctuary Cities Section -->
+        <section id="sanctuary-cities" class="section">
+            <div class="container">
+                <h2>Sanctuary Cities: Funding and Conservative Concerns</h2>
+                
+                <div class="content-grid">
+                    <div class="main-content">
+                        <div class="major-sanctuary-cities">
+                            <h3>Major Sanctuary Cities in the United States</h3>
+                            <div class="cities-grid">
+                                <div class="city-card">
+                                    <h4>New York City, NY</h4>
+                                    <p><strong>Population:</strong> 8.4 million</p>
+                                    <p><strong>Sanctuary Since:</strong> 1989</p>
+                                    <p><strong>Policy:</strong> Limits cooperation with federal immigration enforcement</p>
+                                </div>
+                                <div class="city-card">
+                                    <h4>Los Angeles, CA</h4>
+                                    <p><strong>Population:</strong> 3.9 million</p>
+                                    <p><strong>Sanctuary Since:</strong> 1979</p>
+                                    <p><strong>Policy:</strong> Does not honor ICE detainer requests without judicial warrant</p>
+                                </div>
+                                <div class="city-card">
+                                    <h4>San Francisco, CA</h4>
+                                    <p><strong>Population:</strong> 873,965</p>
+                                    <p><strong>Sanctuary Since:</strong> 1989</p>
+                                    <p><strong>Policy:</strong> Refuses ICE detainer requests, bars officers from asking about immigration status</p>
+                                </div>
+                                <div class="city-card">
+                                    <h4>Chicago, IL</h4>
+                                    <p><strong>Population:</strong> 2.7 million</p>
+                                    <p><strong>Sanctuary Since:</strong> 2012</p>
+                                    <p><strong>Policy:</strong> Welcoming City Ordinance limits cooperation with ICE</p>
+                                </div>
+                                <div class="city-card">
+                                    <h4>Seattle, WA</h4>
+                                    <p><strong>Population:</strong> 749,256</p>
+                                    <p><strong>Sanctuary Since:</strong> 2003</p>
+                                    <p><strong>Policy:</strong> Prohibits city employees from asking about immigration status</p>
+                                </div>
+                                <div class="city-card">
+                                    <h4>Boston, MA</h4>
+                                    <p><strong>Population:</strong> 695,506</p>
+                                    <p><strong>Sanctuary Since:</strong> 2014</p>
+                                    <p><strong>Policy:</strong> Trust Act limits cooperation with federal immigration authorities</p>
+                                </div>
+                            </div>
+        </div>
+
+                        <div class="funding-concerns">
+                            <h3>Concerns: Funding and Resource Allocation</h3>
+                            <div class="concerns-grid">
+                                <div class="concern-card">
+                                    <h4>💰 Taxpayer Burden</h4>
+                                    <p>Critics argue that sanctuary cities use taxpayer money to provide services to unauthorized immigrants instead of focusing on American citizens and legal residents.</p>
+                                    <div class="concern-data">
+                                        <strong>Example:</strong> Los Angeles spends approximately $1.3 billion annually on services for unauthorized immigrants
+                </div>
+                                </div>
+                                <div class="concern-card">
+                                    <h4>🏥 Healthcare Costs</h4>
+                                    <p>Emergency medical services and healthcare costs for unauthorized immigrants strain local budgets and emergency rooms.</p>
+                                    <div class="concern-data">
+                                        <strong>Example:</strong> Texas estimates $1.2 billion annually in uncompensated healthcare costs
+                                    </div>
+                                </div>
+                                <div class="concern-card">
+                                    <h4>🎓 Education Funding</h4>
+                                    <p>Public schools must educate children of unauthorized immigrants, diverting resources from American students.</p>
+                                    <div class="concern-data">
+                                        <strong>Example:</strong> California spends $12.6 billion annually educating unauthorized immigrant children
+                                    </div>
+                                </div>
+                                <div class="concern-card">
+                                    <h4>🚔 Law Enforcement Resources</h4>
+                                    <p>Police resources are diverted to handle immigration-related issues instead of focusing on local crime and public safety.</p>
+                                    <div class="concern-data">
+                                        <strong>Example:</strong> ICE detainers require local jails to hold individuals longer, increasing costs
+                                    </div>
+                                </div>
+                            </div>
+        </div>
+
+                        <div class="sanctuary-history">
+                            <h3>History and Background</h3>
+                            <div class="history-timeline">
+                                <div class="history-item">
+                                    <div class="history-date">1979</div>
+                                    <div class="history-content">
+                                        <h4>First Sanctuary City</h4>
+                                        <p>Los Angeles becomes the first major city to adopt sanctuary policies, refusing to assist federal immigration enforcement.</p>
+                </div>
+                </div>
+                                <div class="history-item">
+                                    <div class="history-date">1980s</div>
+                                    <div class="history-content">
+                                        <h4>Central American Refugees</h4>
+                                        <p>Sanctuary movement grows as churches and cities provide refuge for Central American refugees fleeing civil wars.</p>
+                                    </div>
+                                </div>
+                                <div class="history-item">
+                                    <div class="history-date">1996</div>
+                                    <div class="history-content">
+                                        <h4>Federal Immigration Reform</h4>
+                                        <p>Congress passes laws requiring local cooperation with federal immigration enforcement, but many cities resist.</p>
+                                    </div>
+                                </div>
+                                <div class="history-item">
+                                    <div class="history-date">2017</div>
+                                    <div class="history-content">
+                                        <h4>Trump Administration Crackdown</h4>
+                                        <p>President Trump signs executive order targeting sanctuary cities, threatening to withhold federal funding.</p>
+                                    </div>
+                                </div>
+                                <div class="history-item">
+                                    <div class="history-date">2021-Present</div>
+                                    <div class="history-content">
+                                        <h4>Biden Administration</h4>
+                                        <p>Federal pressure on sanctuary cities reduced, but local policies remain controversial in many areas.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        </div>
+
+                    <div class="sidebar">
+                        <div class="conservative-perspective">
+                            <h3>Arguments Against Sanctuary Cities</h3>
+                            <div class="argument-list">
+                                <div class="argument-item">
+                                    <h4>Rule of Law</h4>
+                                    <p>Sanctuary cities undermine federal immigration law and encourage illegal immigration.</p>
+                                </div>
+                                <div class="argument-item">
+                                    <h4>Public Safety</h4>
+                                    <p>Releasing criminal aliens creates public safety risks for American communities.</p>
+                                </div>
+                                <div class="argument-item">
+                                    <h4>Economic Impact</h4>
+                                    <p>Unauthorized immigrants compete with American workers and strain social services.</p>
+                                </div>
+                                <div class="argument-item">
+                                    <h4>National Sovereignty</h4>
+                                    <p>Local governments should not be able to override federal immigration enforcement.</p>
+                                </div>
+                            </div>
+        </div>
+
+                        <div class="quiz-box">
+                            <h3>Quick Check</h3>
+                            <div class="quiz-question">
+                                <p>Which city was the first major sanctuary city in the U.S.?</p>
+                                <div class="quiz-options">
+                                    <button class="quiz-btn" data-answer="la">Los Angeles (1979)</button>
+                                    <button class="quiz-btn" data-answer="sf">San Francisco (1989)</button>
+                                    <button class="quiz-btn" data-answer="nyc">New York City (1989)</button>
+                                </div>
+                                <div class="quiz-feedback"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+
+        <!-- Birthright Citizenship Section -->
+        <section id="citizenship" class="section">
+            <div class="container">
+                <h2>Birthright Citizenship: Trump's Proposed Ban and Controversies</h2>
+                
+                <div class="content-grid">
+                    <div class="main-content">
+                        <div class="constitution-highlight">
+                            <blockquote>
+                                "All persons born...in the United States...are citizens of the United States"
+                                <footer>- 14th Amendment to the U.S. Constitution</footer>
+                            </blockquote>
+        </div>
+
+                        <div class="trump-proposal">
+                            <h3>Current Trump Administration Stance on Birthright Citizenship</h3>
+                            <div class="proposal-details">
+                                <div class="proposal-card">
+                                    <h4>🎯 2025 Administration Review</h4>
+                                    <p>The current Trump administration has expressed intentions to review and potentially revise birthright citizenship policies to address concerns about illegal immigration.</p>
+                                </div>
+                                <div class="proposal-card">
+                                    <h4>📋 Current Policy Direction</h4>
+                                    <p>The administration is exploring legal avenues to redefine the interpretation of the 14th Amendment regarding automatic citizenship for children born to unauthorized immigrants.</p>
+                                </div>
+                                <div class="proposal-card">
+                                    <h4>⚖️ Legal Framework</h4>
+                                    <p>Administration officials are working with legal scholars to develop constitutional arguments for restricting birthright citizenship without requiring a constitutional amendment.</p>
+                                </div>
+                                <div class="proposal-card">
+                                    <h4>🔄 America First Priorities</h4>
+                                    <p>Birthright citizenship reform aligns with the administration's broader "America First" immigration agenda and border security priorities.</p>
+                                </div>
+                            </div>
+        </div>
+
+                        <div class="birthright-controversies">
+                            <h3>Major Controversies Surrounding Birthright Citizenship</h3>
+                            <div class="controversies-grid">
+                                <div class="controversy-card">
+                                    <h4>🌍 International Comparison</h4>
+                                    <p>Many countries, including most European nations, do not have birthright citizenship. Critics argue the U.S. system is too permissive.</p>
+                                    <div class="controversy-data">
+                                        <strong>Examples:</strong> Canada, Mexico, and Brazil have birthright citizenship; Germany, France, and UK do not
+                                    </div>
+                                </div>
+                                <div class="controversy-card">
+                                    <h4>💰 Economic Arguments</h4>
+                                    <p>Critics claim birth tourism costs taxpayers billions in healthcare, education, and social services.</p>
+                                    <div class="controversy-data">
+                                        <strong>Estimated Cost:</strong> $2.4 billion annually in healthcare for unauthorized immigrants
+                                    </div>
+                                </div>
+                                <div class="controversy-card">
+                                    <h4>🏛️ Legal Interpretation</h4>
+                                    <p>Debate over whether the 14th Amendment was intended to apply to children of unauthorized immigrants.</p>
+                                    <div class="controversy-data">
+                                        <strong>Original Intent:</strong> Amendment passed in 1868, primarily for freed slaves
+                                    </div>
+                                </div>
+                                <div class="controversy-card">
+                                    <h4>📈 Birth Tourism Industry</h4>
+                                    <p>Commercial birth tourism services help pregnant women travel to the U.S. specifically to give birth.</p>
+                                    <div class="controversy-data">
+                                        <strong>Scale:</strong> Estimated 33,000 birth tourists annually, primarily from China and Russia
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="birthright-history">
+                            <h3>History of Birthright Citizenship</h3>
+                            <div class="history-timeline">
+                                <div class="history-item">
+                                    <div class="history-date">1868</div>
+                                    <div class="history-content">
+                                        <h4>14th Amendment Ratified</h4>
+                                        <p>Constitutional amendment grants citizenship to "all persons born or naturalized in the United States" - primarily intended for freed slaves after Civil War.</p>
+                                    </div>
+                                </div>
+                                <div class="history-item">
+                                    <div class="history-date">1898</div>
+                                    <div class="history-content">
+                                        <h4>Wong Kim Ark Case</h4>
+                                        <p>Supreme Court rules that children of immigrants (even non-citizens) are U.S. citizens by birth, establishing modern interpretation.</p>
+                                    </div>
+                                </div>
+                                <div class="history-item">
+                                    <div class="history-date">1980s-1990s</div>
+                                    <div class="history-content">
+                                        <h4>Birth Tourism Emerges</h4>
+                                        <p>Commercial services begin helping pregnant women travel to the U.S. specifically to give birth and obtain citizenship for their children.</p>
+                                    </div>
+                                </div>
+                                <div class="history-item">
+                                    <div class="history-date">2010s</div>
+                                    <div class="history-content">
+                                        <h4>Political Debate Intensifies</h4>
+                                        <p>Birth tourism becomes political issue, with some states considering restrictions and federal investigations into commercial operations.</p>
+                                    </div>
+                                </div>
+                                <div class="history-item">
+                                    <div class="history-date">2016-Present</div>
+                                    <div class="history-content">
+                                        <h4>Trump Administration Focus</h4>
+                                        <p>Birthright citizenship becomes major campaign issue, with Trump promising to end the practice through executive action.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar">
+                        <div class="legal-requirements">
+                            <h3>Current Legal Process</h3>
+                            <div class="process-steps">
+                                <div class="step-item">
+                                    <div class="step-number">1</div>
+                                    <div class="step-content">
+                                        <h4>Child Born in U.S.</h4>
+                                        <p>Automatic citizenship regardless of parents' status</p>
+                                    </div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-number">2</div>
+                                    <div class="step-content">
+                                        <h4>Age 21 Requirement</h4>
+                                        <p>Child must reach 21 before sponsoring parents</p>
+                                    </div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-number">3</div>
+                                    <div class="step-content">
+                                        <h4>Complex Process</h4>
+                                        <p>Lengthy application with no guarantee of approval</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="quiz-box">
+                            <h3>Quick Check</h3>
+                            <div class="quiz-question">
+                                <p>What would be required to end birthright citizenship?</p>
+                                <div class="quiz-options">
+                                    <button class="quiz-btn" data-answer="amendment">Constitutional Amendment</button>
+                                    <button class="quiz-btn" data-answer="executive">Executive Order</button>
+                                    <button class="quiz-btn" data-answer="law">Federal Law</button>
+                                </div>
+                                <div class="quiz-feedback"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+        <!-- Fentanyl Crisis Section -->
+        <section id="fentanyl" class="section">
+            <div class="container">
+                <h2>The Fentanyl Crisis: History, Death Toll, and Trump's Tariff Strategy</h2>
+                
+                <div class="content-grid">
+                    <div class="main-content">
+                        <div class="fentanyl-history">
+                            <h3>Fentanyl Crisis: Current Status and 2025 Administration Response</h3>
+                            <div class="history-timeline">
+                                <div class="history-item">
+                                    <div class="history-date">2024</div>
+                                    <div class="history-content">
+                                        <h4>Significant Progress</h4>
+                                        <p>According to CDC data, drug overdose deaths decreased by 27% in 2024, with fentanyl-related deaths dropping from over 76,000 in 2023 to just over 48,000 in 2024.</p>
+                                    </div>
+                                </div>
+                                <div class="history-item">
+                                    <div class="history-date">2025</div>
+                                    <div class="history-content">
+                                        <h4>Current Administration Actions</h4>
+                                        <p>The Trump administration has prioritized border security to curb fentanyl smuggling, deploying additional personnel and technology at the border.</p>
+                                    </div>
+                                </div>
+                                <div class="history-item">
+                                    <div class="history-date">2025</div>
+                                    <div class="history-content">
+                                        <h4>National Response Plan</h4>
+                                        <p>Implementation of a National Response Plan to address the emerging threat of fentanyl combined with xylazine, designated as an emerging threat.</p>
+                                    </div>
+                                </div>
+                                <div class="history-item">
+                                    <div class="history-date">2025</div>
+                                    <div class="history-content">
+                                        <h4>Enhanced Border Security</h4>
+                                        <p>Comprehensive measures including physical barriers, enhanced detection technology, and increased personnel to prevent fentanyl smuggling across the southern border.</p>
+                                    </div>
+                                </div>
+        </div>
+    </div>
+
+                        <div class="death-statistics">
+                            <h3>Fentanyl Death Statistics: 10-Year Overview</h3>
+                            <div class="death-stats-grid">
+                                <div class="death-stat-card">
+                                    <div class="stat-number">48,000+</div>
+                                    <div class="stat-label">Fentanyl deaths in 2024 (27% decrease from 2023)</div>
+                                </div>
+                                <div class="death-stat-card">
+                                    <div class="stat-number">76,000+</div>
+                                    <div class="stat-label">Fentanyl deaths in 2023 (peak year)</div>
+                                </div>
+                                <div class="death-stat-card">
+                                    <div class="stat-number">400,000+</div>
+                                    <div class="stat-label">Total fentanyl deaths over past 10 years</div>
+                                </div>
+                                <div class="death-stat-card">
+                                    <div class="stat-number">2nd Leading</div>
+                                    <div class="stat-label">Cause of death for Americans aged 18-45</div>
+                                </div>
+                            </div>
+                            
+                            <div class="comparison-with-other-causes">
+                                <h4>Fentanyl Deaths Compared to Other Leading Causes</h4>
+                                <div class="cause-comparison">
+                                    <div class="cause-item">
+                                        <span class="cause-name">Heart Disease</span>
+                                        <span class="cause-deaths">~695,000 annually</span>
+                                    </div>
+                                    <div class="cause-item">
+                                        <span class="cause-name">Cancer</span>
+                                        <span class="cause-deaths">~605,000 annually</span>
+                                    </div>
+                                    <div class="cause-item">
+                                        <span class="cause-name">COVID-19 (2020-2022 avg)</span>
+                                        <span class="cause-deaths">~400,000 annually</span>
+                                    </div>
+                                    <div class="cause-item">
+                                        <span class="cause-name">Fentanyl Overdoses</span>
+                                        <span class="cause-deaths">~48,000 annually (2024)</span>
+                                    </div>
+                                    <div class="cause-item">
+                                        <span class="cause-name">Car Accidents</span>
+                                        <span class="cause-deaths">~42,000 annually</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="trump-tariffs">
+                            <h3>Current 2025 Administration Fentanyl Strategy</h3>
+                            <div class="tariff-strategy">
+                                <div class="strategy-card">
+                                    <h4>🚧 Enhanced Border Security</h4>
+                                    <p>The administration has deployed additional personnel and advanced technology to detect and prevent fentanyl smuggling at border crossings.</p>
+                                    <div class="strategy-data">
+                                        <strong>Current Focus:</strong> Physical barriers and enhanced detection systems
+                                    </div>
+                                </div>
+                                <div class="strategy-card">
+                                    <h4>🎯 National Response Plan</h4>
+                                    <p>Implementation of comprehensive strategies to address the emerging threat of fentanyl combined with xylazine, designated as a national threat.</p>
+                                    <div class="strategy-data">
+                                        <strong>Impact:</strong> Coordinated federal response to combat drug trafficking
+                                    </div>
+                                </div>
+                                <div class="strategy-card">
+                                    <h4>📊 2025 Progress Data</h4>
+                                    <p>According to CDC data, drug overdose deaths decreased by 27% in 2024, with fentanyl-related deaths dropping from over 76,000 in 2023 to just over 48,000 in 2024.</p>
+                                    <div class="strategy-data">
+                                        <strong>Source:</strong> Centers for Disease Control and Prevention (CDC)
+                                    </div>
+                                </div>
+                                <div class="strategy-card">
+                                    <h4>🔍 Advanced Detection</h4>
+                                    <p>Enhanced technology and personnel deployment at ports of entry to identify and intercept fentanyl shipments.</p>
+                                    <div class="strategy-data">
+                                        <strong>Technology:</strong> State-of-the-art screening equipment and trained personnel
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="supply-chain-detailed">
+                            <h3>Current Fentanyl Supply Chain</h3>
+                            <div class="supply-flow">
+                                <div class="supply-step">
+                                    <div class="step-icon">🇨🇳</div>
+                                    <div class="step-content">
+                                        <h4>China</h4>
+                                        <p>Precursor chemicals and pill presses</p>
+                                        <div class="step-data">Banned direct fentanyl exports in 2019</div>
+                                    </div>
+                                </div>
+                                <div class="supply-arrow">→</div>
+                                <div class="supply-step">
+                                    <div class="step-icon">🇲🇽</div>
+                                    <div class="step-content">
+                                        <h4>Mexico Cartels</h4>
+                                        <p>Sinaloa and Jalisco cartels manufacture final product</p>
+                                        <div class="step-data">Hidden in vehicles crossing border</div>
+                                    </div>
+                                </div>
+                                <div class="supply-arrow">→</div>
+                                <div class="supply-step">
+                                    <div class="step-icon">🇺🇸</div>
+                                    <div class="step-content">
+                                        <h4>U.S. Distribution</h4>
+                                        <p>Cartels distribute through established networks</p>
+                                        <div class="step-data">2,800 lbs seized in FY2023</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar">
+                        <div class="crisis-impact">
+                            <h3>Crisis Impact</h3>
+                            <div class="impact-stats">
+                                <div class="impact-item">
+                                    <h4>Economic Cost</h4>
+                                    <p>$1.5 trillion annually in healthcare, criminal justice, and lost productivity</p>
+                                </div>
+                                <div class="impact-item">
+                                    <h4>Demographics</h4>
+                                    <p>Most deaths among 25-54 age group, affecting working-age Americans</p>
+                                </div>
+                                <div class="impact-item">
+                                    <h4>Geographic Spread</h4>
+                                    <p>Every state affected, with highest rates in West Virginia, Delaware, and Maryland</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="quiz-box">
+                            <h3>Quick Check</h3>
+                            <div class="quiz-question">
+                                <p>How many Americans die daily from fentanyl?</p>
+                                <div class="quiz-options">
+                                    <button class="quiz-btn" data-answer="200">200</button>
+                                    <button class="quiz-btn" data-answer="50">50</button>
+                                    <button class="quiz-btn" data-answer="500">500</button>
+                                </div>
+                                <div class="quiz-feedback"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trump Policies Section -->
+        <section id="trump-policies" class="section">
+            <div class="container">
+                <h2>Current Trump Administration: Top 5 Recent Immigration Changes vs Biden Policies</h2>
+                
+                <div class="content-grid">
+                    <div class="main-content">
+                        <div class="trump-recent-policies">
+                            <h3>Current Trump Administration Immigration Actions (2025)</h3>
+                            <div class="policy-list">
+                                <div class="policy-item">
+                                    <div class="policy-number">1</div>
+                                    <div class="policy-content">
+                                        <h4>Ending Catch-and-Release</h4>
+                                        <p>The administration has ended catch-and-release policies, ensuring individuals entering the U.S. unlawfully are detained and processed for removal.</p>
+                                        <div class="policy-impact">Impact: Dramatic reduction in border crossings</div>
+                                    </div>
+                                </div>
+                                <div class="policy-item">
+                                    <div class="policy-number">2</div>
+                                    <div class="policy-content">
+                                        <h4>Physical Barrier Construction</h4>
+                                        <p>Construction of physical barriers along the southern border to prevent unlawful entry and enhance border security.</p>
+                                        <div class="policy-impact">Impact: Enhanced border control and reduced illegal crossings</div>
+                                    </div>
+                                </div>
+                                <div class="policy-item">
+                                    <div class="policy-number">3</div>
+                                    <div class="policy-content">
+                                        <h4>Remain in Mexico Program</h4>
+                                        <p>Reinstated the "Remain in Mexico" program requiring asylum seekers to wait in Mexico for their U.S. court dates.</p>
+                                        <div class="policy-impact">Impact: Reduced asylum backlog and deterred fraudulent claims</div>
+                                    </div>
+                                </div>
+                                <div class="policy-item">
+                                    <div class="policy-number">4</div>
+                                    <div class="policy-content">
+                                        <h4>Enhanced Personnel Deployment</h4>
+                                        <p>Deployment of additional personnel and resources to secure the border and enforce immigration laws effectively.</p>
+                                        <div class="policy-impact">Impact: Increased border security and enforcement capacity</div>
+                                    </div>
+                                </div>
+                                <div class="policy-item">
+                                    <div class="policy-number">5</div>
+                                    <div class="policy-content">
+                                        <h4>Federal-State Partnerships</h4>
+                                        <p>Promoting federal-state partnerships to ensure uniform enforcement of immigration laws across all jurisdictions.</p>
+                                        <div class="policy-impact">Impact: Coordinated enforcement and reduced sanctuary city cooperation</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="biden-comparison">
+                            <h3>Biden Administration Policies (2021-2024)</h3>
+                            <div class="comparison-grid">
+                                <div class="comparison-item">
+                                    <div class="biden-policy">
+                                        <h4>Catch-and-Release</h4>
+                                        <p>Implemented catch-and-release policies allowing migrants to enter the U.S. while awaiting court proceedings.</p>
+                                    </div>
+                                    <div class="trump-policy">
+                                        <h4>Ended Catch-and-Release</h4>
+                                        <p>Eliminated catch-and-release policies, ensuring all individuals are detained and processed for removal.</p>
+                                    </div>
+                                </div>
+                                <div class="comparison-item">
+                                    <div class="biden-policy">
+                                        <h4>Asylum Processing</h4>
+                                        <p>Restored asylum processing at ports of entry and ended "Remain in Mexico" program.</p>
+                                    </div>
+                                    <div class="trump-policy">
+                                        <h4>Remain in Mexico Reinstated</h4>
+                                        <p>Reinstated "Remain in Mexico" program requiring asylum seekers to wait in Mexico for court dates.</p>
+                                    </div>
+                                </div>
+                                <div class="comparison-item">
+                                    <div class="biden-policy">
+                                        <h4>Border Security</h4>
+                                        <p>Reduced border security measures and personnel deployment at the southern border.</p>
+                                    </div>
+                                    <div class="trump-policy">
+                                        <h4>Enhanced Border Security</h4>
+                                        <p>Deployed additional personnel, constructed physical barriers, and enhanced detection technology.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="policy-consequences">
+                            <h3>Policy Consequences and Analysis</h3>
+                            <div class="consequences-grid">
+                                <div class="consequence-card">
+                                    <h4>📊 Border Crossings</h4>
+                                    <p><strong>Biden Era:</strong> Record highs of 2.4 million encounters in FY2022</p>
+                                    <p><strong>Current Trump Era:</strong> Dramatic reduction to approximately 45,000 monthly encounters (75% decrease)</p>
+                                </div>
+                                <div class="consequence-card">
+                                    <h4>🏛️ Enforcement Approach</h4>
+                                    <p><strong>Biden:</strong> Catch-and-release policies allowing migrants to enter while awaiting proceedings</p>
+                                    <p><strong>Current Trump:</strong> End to catch-and-release with immediate detention and processing for removal</p>
+                                </div>
+                                <div class="consequence-card">
+                                    <h4>🚧 Border Security</h4>
+                                    <p><strong>Biden:</strong> Reduced border security measures and personnel</p>
+                                    <p><strong>Current Trump:</strong> Enhanced border security with physical barriers and additional personnel deployment</p>
+                                </div>
+                                <div class="consequence-card">
+                                    <h4>🤝 Federal-State Relations</h4>
+                                    <p><strong>Biden:</strong> Limited federal-state coordination on immigration enforcement</p>
+                                    <p><strong>Current Trump:</strong> Promoting federal-state partnerships for uniform immigration law enforcement</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar">
+                        <div class="key-statistics">
+                            <h3>Key Statistics Comparison</h3>
+                            <div class="stat-comparison">
+                                <div class="stat-item">
+                                    <h4>Monthly Border Encounters</h4>
+                                    <div class="stat-values">
+                                        <span class="biden-stat">180K (Biden avg)</span>
+                                        <span class="trump-stat">45K (Current Trump)</span>
+                    </div>
+                    </div>
+                                <div class="stat-item">
+                                    <h4>Enforcement Policy</h4>
+                                    <div class="stat-values">
+                                        <span class="biden-stat">Catch-and-Release</span>
+                                        <span class="trump-stat">Immediate Detention</span>
+                    </div>
+                    </div>
+                                <div class="stat-item">
+                                    <h4>Border Security</h4>
+                                    <div class="stat-values">
+                                        <span class="biden-stat">Reduced Personnel</span>
+                                        <span class="trump-stat">Enhanced Deployment</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="quiz-box">
+                            <h3>Quick Check</h3>
+                            <div class="quiz-question">
+                                <p>Which administration had higher border encounter numbers?</p>
+                                <div class="quiz-options">
+                                    <button class="quiz-btn" data-answer="biden">Biden Administration</button>
+                                    <button class="quiz-btn" data-answer="trump">Trump Administration</button>
+                                </div>
+                                <div class="quiz-feedback"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ICE History Section -->
+        <section id="ice-history" class="section">
+            <div class="container">
+                <h2>ICE: History, Mission, and Growing Importance in Current Administration</h2>
+                
+                <div class="content-grid">
+                    <div class="main-content">
+                        <div class="ice-detailed-history">
+                            <h3>ICE History and Evolution</h3>
+                            <div class="history-timeline">
+                                <div class="history-item">
+                                    <div class="history-date">2001</div>
+                                    <div class="history-content">
+                                        <h4>9/11 Attacks</h4>
+                                        <p>Terrorist attacks exposed gaps in immigration enforcement, leading to calls for reform and consolidation.</p>
+                                    </div>
+                                </div>
+                                <div class="history-item">
+                                    <div class="history-date">2002</div>
+                                    <div class="history-content">
+                                        <h4>Homeland Security Act</h4>
+                                        <p>Congress creates Department of Homeland Security, dissolving INS and creating ICE as part of massive government reorganization.</p>
+                                    </div>
+                                </div>
+                                <div class="history-item">
+                                    <div class="history-date">2003</div>
+                                    <div class="history-content">
+                                        <h4>ICE Officially Created</h4>
+                                        <p>ICE begins operations with 20,000 employees, combining immigration enforcement and customs investigation functions under one agency.</p>
+                                    </div>
+                                </div>
+                                <div class="history-item">
+                                    <div class="history-date">2008-2016</div>
+                                    <div class="history-content">
+                                        <h4>Steady Growth Period</h4>
+                                        <p>ICE gradually expands under Obama administration, focusing on criminal aliens while maintaining stable funding levels around $5-6 billion annually.</p>
+                                    </div>
+                                </div>
+                                <div class="history-item">
+                                    <div class="history-date">2017-2021</div>
+                                    <div class="history-content">
+                                        <h4>Trump Expansion</h4>
+                                        <p>Major funding increases, more aggressive enforcement policies, and expanded detention capacity to support "zero tolerance" approach.</p>
+                                    </div>
+                                </div>
+                                <div class="history-item">
+                                    <div class="history-date">2025</div>
+                                    <div class="history-content">
+                                        <h4>Unprecedented Growth</h4>
+                                        <p>Record $75 billion budget over 4 years, 10,000+ new agents, 100,000 detention capacity - largest expansion in agency history.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ice-mission-detailed">
+                            <h3>What ICE Actually Does</h3>
+                            <div class="mission-breakdown">
+                                <div class="mission-section">
+                                    <h4>🛡️ Enforcement & Removal Operations (ERO)</h4>
+                                    <div class="mission-details">
+                                        <div class="detail-item">
+                                            <h5>Interior Enforcement</h5>
+                                            <p>Locates, arrests, and removes unauthorized immigrants living in the U.S.</p>
+                                        </div>
+                                        <div class="detail-item">
+                                            <h5>Detention Management</h5>
+                                            <p>Operates detention facilities and contracts with private prisons to house detainees.</p>
+                                        </div>
+                                        <div class="detail-item">
+                                            <h5>Deportation Proceedings</h5>
+                                            <p>Processes removal cases and coordinates with immigration courts.</p>
+                                        </div>
+                                        <div class="detail-item">
+                                            <h5>Worksite Enforcement</h5>
+                                            <p>Investigates businesses employing unauthorized workers.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mission-section">
+                                    <h4>🔍 Homeland Security Investigations (HSI)</h4>
+                                    <div class="mission-details">
+                                        <div class="detail-item">
+                                            <h5>Drug Trafficking</h5>
+                                            <p>Investigates fentanyl, cocaine, and other drug smuggling operations.</p>
+                                        </div>
+                                        <div class="detail-item">
+                                            <h5>Human Smuggling</h5>
+                                            <p>Targets criminal organizations that smuggle people across borders.</p>
+                                        </div>
+                                        <div class="detail-item">
+                                            <h5>Financial Crimes</h5>
+                                            <p>Investigates money laundering and financial crimes related to immigration.</p>
+                                        </div>
+                                        <div class="detail-item">
+                                            <h5>Cyber Crimes</h5>
+                                            <p>Investigates online crimes including document fraud and identity theft.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ice-visualization">
+                            <h3>ICE Growth and Funding Over Time</h3>
+                            <div class="ice-chart-container">
+                                <canvas id="iceChart"></canvas>
+                            </div>
+                            <div class="chart-explanation">
+                                <p>This chart shows ICE's dramatic growth from 2003 to present, with major funding increases under the Trump administration.</p>
+                            </div>
+                        </div>
+
+                        <div class="ice-current-importance">
+                            <h3>Why ICE is More Important Than Ever</h3>
+                            <div class="importance-grid">
+                                <div class="importance-card">
+                                    <h4>🎯 Mass Deportation Operations</h4>
+                                    <p>ICE is the primary agency executing Trump's plan to deport millions of unauthorized immigrants, requiring massive manpower and resources.</p>
+                                </div>
+                                <div class="importance-card">
+                                    <h4>🏗️ Infrastructure Support</h4>
+                                    <p>ICE operates the detention facilities needed to house 100,000+ detainees as part of the administration's enforcement strategy.</p>
+                                </div>
+                                <div class="importance-card">
+                                    <h4>💼 Worksite Enforcement</h4>
+                                    <p>Increased focus on targeting businesses that employ unauthorized workers, requiring more investigators and enforcement actions.</p>
+                                </div>
+                                <div class="importance-card">
+                                    <h4>🌐 International Cooperation</h4>
+                                    <p>ICE coordinates with foreign governments on deportation and investigations, playing key role in international enforcement.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar">
+                        <div class="ice-funding-details">
+                            <h3>Recent Funding Increases</h3>
+                            <div class="funding-breakdown">
+                                <div class="funding-item">
+                                    <h4>Total Budget</h4>
+                                    <div class="funding-amount">$18.75 billion annually</div>
+                                    <p>Over 4 years: $75 billion total</p>
+                                </div>
+                                <div class="funding-item">
+                                    <h4>New Personnel</h4>
+                                    <div class="funding-amount">10,000+ agents</div>
+                                    <p>115,000+ applicants for positions</p>
+                                </div>
+                                <div class="funding-item">
+                                    <h4>Detention Capacity</h4>
+                                    <div class="funding-amount">100,000 beds</div>
+                                    <p>Up from 34,000 under Biden</p>
+                                </div>
+                                <div class="funding-item">
+                                    <h4>Technology & Equipment</h4>
+                                    <div class="funding-amount">$2 billion</div>
+                                    <p>Enhanced surveillance and enforcement tools</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ice-stats">
+                            <h3>Current ICE Statistics</h3>
+                            <div class="stat-item">
+                                <div class="stat-number">22,000+</div>
+                                <div class="stat-label">Total ICE employees</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">1M+</div>
+                                <div class="stat-label">Deportations planned for 2025</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">300+</div>
+                                <div class="stat-label">Field offices nationwide</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">50+</div>
+                                <div class="stat-label">Countries with ICE presence</div>
+                            </div>
+                        </div>
+
+                        <div class="quiz-box">
+                            <h3>Quick Check</h3>
+                            <div class="quiz-question">
+                                <p>What was ICE's total 4-year budget allocation in 2025?</p>
+                                <div class="quiz-options">
+                                    <button class="quiz-btn" data-answer="75">$75 billion</button>
+                                    <button class="quiz-btn" data-answer="25">$25 billion</button>
+                                    <button class="quiz-btn" data-answer="50">$50 billion</button>
+                                </div>
+                                <div class="quiz-feedback"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="sources">
+                    <h3>Sources</h3>
+                    <p>All data and facts come from government reports, news agencies, and research organizations including U.S. Customs and Border Protection, Congress, and academic sources.</p>
+                </div>
+                <div class="credits">
+                    <p>Interactive Learning Model for U.S. Immigration & Border Security</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
